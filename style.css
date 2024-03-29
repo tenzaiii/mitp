@@ -287,6 +287,41 @@ ul{
     margin-left: 20px;
 }
 
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid #a7a26b;
+    padding: 5px;
+}
+
+.page-btn{
+margin: 0 auto 80px;
+
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #a7a26b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: #a7a26b;
+    color: #fff;
+}
+
+
+
+
+
 @media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
