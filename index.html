@@ -19,10 +19,12 @@
                         <li><a href="product.html">PRODUCT</a></li>
                         <li><a href="">ABOUT</a></li>
                         <li><a href="">CONTACT</a></li>
-                        <li><a href="">ACCOUNT</a></li>
+                        <li><a href="account.html">ACCOUNT</a></li>
                     </ul>
+                    <img src="img/moon.png" id="mode">
+
                 </nav>
-                <img src="img/cart.png" width="30px" height="30px">
+                <a href="cart.html"><img src="img/cart.png" width="30px" height="30px" alt="'pic"></a>
                 <img src="img/menu.png" class="menu-icon" 
                 onclick="menutoggle()">
 
@@ -36,7 +38,7 @@
                         <a href="" class="btn">Explore Now</a>
                 </div>
                 <div class="col-2">
-                    <img src="img/penhome.png">
+                    <img src="img/penhome3.png">
                 </div>
             </div>
         </div>
@@ -136,24 +138,36 @@
     <div class="small-container">
         <div class="row">
             <div class="col-3">
-                <p>Upgrade your writing experience today with the Inkjet System - 
-                    the ultimate solution for smudge-proof, erasable writing. </p>
+                <h1>"</h1>
+                <p>"I purchased this pen for my son who is in college, and he absolutely 
+                    loves it. He uses it for taking notes, underlining important points, 
+                    and even for quick doodles during lectures." </p>
+                    <h2>★★★★☆</h2>
+
                 <img src="img/ronald.jpg" class="offer-img">
                 <h3>Ronald Castillo</h3>
 
             </div>
             <div class="col-3">
-                <p>Upgrade your writing experience today with the Inkjet System - 
-                    the ultimate solution for smudge-proof, erasable writing. </p>
+                <h1>"</h1>
+                <p>"I purchased this pen for my son who is in college, and he absolutely 
+                    loves it. He uses it for taking notes, underlining important points, 
+                    and even for quick doodles during lectures." </p>
+                    <h2>★★★★☆</h2>
+
                 <img src="img/ronald.jpg" class="offer-img">
-                <h3>Fritz Milenna</h3>
+                <h3>Ronald Castillo</h3>
 
             </div>
             <div class="col-3">
-                <p>Upgrade your writing experience today with the Inkjet System - 
-                    the ultimate solution for smudge-proof, erasable writing. </p>
+                <h1>"</h1>
+                <p>"I purchased this pen for my son who is in college, and he absolutely 
+                    loves it. He uses it for taking notes, underlining important points, 
+                    and even for quick doodles during lectures." </p>
+                    <h2>★★★★☆</h2>
+
                 <img src="img/ronald.jpg" class="offer-img">
-                <h3>Hazel Mia</h3>
+                <h3>Ronald Castillo</h3>
 
             </div>
         </div>
@@ -216,5 +230,18 @@
         }
     }
 </script>
+<script>
+    var mode = document.getElementById("mode");
+
+   mode.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                mode.src = "img/sun.png";
+            }else{
+                mode.src = "img/moon.png";
+            }
+        }
+</script>
+
 </body>
 </html>

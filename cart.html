@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product - mitp.pen</title>
+    <title>Cart - mitp.pen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,83 +31,62 @@
         </div>
     </div>
 
-<div class="small-container single-product">
-    <div class="row">
-        <div class="col-2">
-            <img src="img/Product1.png" width="100%" id="ProductImg" alt="'pic">
-
-            <div class="small-img-row">
-                <div class="small-img-col">
-                    <img src="img/Category1.png" width="100%" class="small-img" alt="'pic">
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img/Product1.png" alt="'pic">
+                    <div>
+                        <p>Multi-Purpose Interchangheable Tip Pen</p>
+                        <snall>Price: ₱150.00</snall>
+                        <ahref="">Remove</a>
+                    </div>
                 </div>
-                <div class="small-img-col">
-                    <img src="img/Category2.png" width="100%" class="small-img" alt="'pic">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/Category3.png" width="100%" class="small-img" alt="'pic">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/InkJet.png" width="100%" class="small-img" alt="'pic">
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₱150</td>
+        </tr>
+        <td>
+            <div class="cart-info">
+                <img src="img/Product4.png" alt="'pic">
+                <div>
+                    <p>Multi-Purpose Interchangheable Tip Pen</p>
+                    <snall>Price: ₱150.00</snall>
+                    <ahref="">Remove</a>
                 </div>
             </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>₱150</td>
+    </table>
 
-
-        </div>
-        <div class="col-2">
-            <p>Home / Pen</p>
-            <h1>Multi-Purpose Interchangeable Tip Pen</h1>
-            <h4>₱150</h4>
-            <select>
-                <option>Select Variant</option>
-                <option>Black Gold</option>
-                <option>White Gold</option>
-            </select>
-            <input type="number" value="1">
-            <a href="cart.html" class="btn">Add to Cart</a>
-            <h3>Product Details</h3>
-            <p>The Multi-Purpose Interchangeable Tip Pen is a versatile writing instrument 
-                designed to cater to various writing and creative needs. With its 
-                interchangeable tips, this pen offers flexibility and functionality for 
-                different tasks, from writing to drawing and highlighting.</p>
-        </div>
-    </div>
-</div>
-
-<div class="small-container">
-    <div class="row row-2">
-        <h2>Related Products</h2>
-        <a href="product.html">View More</a>
-    </div>
-</div>
-
-
-<div class="small-container">
-    
-    <div class="row">
-        <div class="col-4">
-            <img src="img/Product1.png" alt="'pic">
-            <h4>Pen Product 1</h4>
-            <p>₱150</p>
-        </div>
-        <div class="col-4">
-            <img src="img/Product2.png" alt="'pic">
-            <h4>Pen Product 2</h4>
-            <p>₱150</p>
-        </div>
-        <div class="col-4">
-            <img src="img/Product3.png" alt="'pic">
-            <h4>Pen Product 3</h4>
-            <p>₱150</p>
-        </div>
-        <div class="col-4">
-            <img src="img/Product4.png" alt="'pic">
-            <h4>Pen Product 4</h4>
-            <p>₱150</p>
-        </div> 
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₱300.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>35.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>₱265.00</td>
+            </tr>
+        </table>
     </div>
     
 </div>
-</div>
+
+
+
+
 
 <div class="footer">
     <div class="container">
@@ -165,25 +144,6 @@
         }
     }
 </script>
-
-<script>
-    var ProductImg = document.getElementById("ProductImg");
-    var SmallImg = document.getElementsByClassName("small-img");
-
-    SmallImg[0].onclick = function(){
-        ProductImg.src = SmallImg[0].src;
-    }
-    SmallImg[1].onclick = function(){
-        ProductImg.src = SmallImg[1].src;
-    }
-    SmallImg[2].onclick = function(){
-        ProductImg.src = SmallImg[2].src;
-    }
-    SmallImg[3].onclick = function(){
-        ProductImg.src = SmallImg[3].src;
-    }
-</script>
-
 <script>
     var mode = document.getElementById("mode");
 
