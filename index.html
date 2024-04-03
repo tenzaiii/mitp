@@ -3,233 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - mitp.pen</title>
+    <title>Marian School of Quezon City</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="sstylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/
+    fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo2.png" width="125px"></a>
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="product.html">PRODUCT</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">CONTACT</a></li>
-                        <li><a href="account.html">ACCOUNT</a></li>
-                    </ul>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="IMG/logo.png" alt="'logo" class="logo"></a>
+            <div class="nav-links">           
+                <i class="fa fa-times" onclick="hideMenu()"></i>       
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Courses.html">COURSES</a></li>
+                    <li><a href="Admissions.html">ADMISSIONS</a></li>
+                    <li><a href="">MEDIA</a></li>
+                    <li><a href="">CONTACT</a></li>
                     <img src="img/moon.png" id="mode">
 
-                </nav>
-                <a href="cart.html"><img src="img/cart.png" width="30px" height="30px" alt="'pic"></a>
-                <img src="img/menu.png" class="menu-icon" 
-                onclick="menutoggle()">
-
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Next Generation of<br>Tip Pen</h1>
-                    <p>Upgrade your writing arsenal today with the Multipurpose Interchangeable 
-                        Tip Pen. <br>Experience the convenience, versatility, and quality 
-                        that sets it apart from the rest! </p>
-                        <a href="" class="btn">Explore Now</a>
-                </div>
-                <div class="col-2">
-                    <img src="img/penhome3.png">
-                </div>
-            </div>
-        </div>
-    </div>
-
-<div class="categories">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-3">
-                <img src="img/Category1.png">
-            </div>
-            <div class="col-3">
-                <img src="img/Category2.png">
-            </div>
-            <div class="col-3">
-                <img src="img/Category3.png">
-            </div>
-        </div>
-    </div>
-
-<div class="small-container">
-    <h2 class="title"> Featured Products</h2>
-    <div class="row">
-        <div class="col-4">
-            <img src="img/Product1.png">
-            <h4>Pen Product 1</h4>
-            <p>₱150</p>
-        </div>
-        <div class="col-4">
-            <img src="img/Product2.png">
-            <h4>Pen Product 2</h4>
-            <p>₱150</p>
-        </div>
-        <div class="col-4">
-            <img src="img/Product3.png">
-            <h4>Pen Product 3</h4>
-            <p>₱150</p>
-        </div>
-    </div>
-    <h2 class="title">Latest Products</h2>
-    <div class="row">
-        <div class="col-4">
-            <img src="img/Product1.png">
-            <h4>Pen Product 1</h4>
-            <p>₱150</p>
-        </div>
-        <div class="col-4">
-            <img src="img/Product2.png">
-            <h4>Pen Product 2</h4>
-            <p>₱150</p>
-        </div>
-        <div class="col-4">
-            <img src="img/Product3.png">
-            <h4>Pen Product 3</h4>
-            <p>₱150</p>
-        </div>
-        <div class="col-4">
-            <img src="img/Product1.png">
-            <h4>Pen Product 1</h4>
-            <p>₱150</p>
-        </div>
-        <div class="col-4">
-            <img src="img/Product2.png">
-            <h4>Pen Product 2</h4>
-            <p>₱150</p>
-        </div>
-        <div class="col-4">
-            <img src="img/Product3.png">
-            <h4>Pen Product 3</h4>
-            <p>₱150</p>
-        </div>
-    </div>
-</div>
-</div>
-
-<div class="offer">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-2">
-                <img src="img/Category1.png" class="offer-img">
-            </div>
-            <div class="col-2">
-                <p>Newest Innovation of Tip Pen</p>
-                <h1>Inkjet System</h1>
-                <small>
-                Upgrade your writing experience today with the Inkjet System - 
-                the ultimate solution for smudge-proof, erasable writing. 
-                <br>clean, crisp, and flawless results every time!
-                </small>
-                <a href="product-details.html"class="btn">Buy Now</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="testimonial">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-3">
-                <h1>"</h1>
-                <p>"I purchased this pen for my son who is in college, and he absolutely 
-                    loves it. He uses it for taking notes, underlining important points, 
-                    and even for quick doodles during lectures." </p>
-                    <h2>★★★★☆</h2>
-
-                <img src="img/ronald.jpg" class="offer-img">
-                <h3>Ronald Castillo</h3>
-
-            </div>
-            <div class="col-3">
-                <h1>"</h1>
-                <p>"I purchased this pen for my son who is in college, and he absolutely 
-                    loves it. He uses it for taking notes, underlining important points, 
-                    and even for quick doodles during lectures." </p>
-                    <h2>★★★★☆</h2>
-
-                <img src="img/ronald.jpg" class="offer-img">
-                <h3>Ronald Castillo</h3>
-
-            </div>
-            <div class="col-3">
-                <h1>"</h1>
-                <p>"I purchased this pen for my son who is in college, and he absolutely 
-                    loves it. He uses it for taking notes, underlining important points, 
-                    and even for quick doodles during lectures." </p>
-                    <h2>★★★★☆</h2>
-
-                <img src="img/ronald.jpg" class="offer-img">
-                <h3>Ronald Castillo</h3>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col-1">
-                    <h3>Download our App</h3>
-                    <p>Download App for Android and IOS mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="img/play-store.png">
-                        <img src="img/app-store.png">
-                    </div>
-            </div>
-            <div class="footer-col-2">
-                <img src="img/logo3.png">
-                <p>Download App for Android and IOS mobile phone.</p>
-            </div>
-            <div class="footer-col-3">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li>Coupons</li>
-                    <li>Blog Post</li>
-                    <li>Return Policy</li>
-                    <li>Join Affiliate</li>
                 </ul>
             </div>
-            <div class="footer-col-4">
-                <h3>Follow us</h3>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>YouTube</li>
-                </ul>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Welcome to Marian School of Quezon City</h1>
+            <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+            learning established by an academic community <br> of committed and responsible 
+            individuals
+            </p>
+            <a href="" class="hero-btn yellow">Get Started</a>
+        </div>
+
+    </section>
+
+    <script>
+        var navLinks = document.getElementbyId("navlinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function showMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+    </script>
+
+<!--news-->
+<section class="latestnews">
+    <h1>Latest News</h1>
+    <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+    learning established by an academic community of committed and responsible 
+    individuals</p>
+
+    <div class="row">
+        <div class="news">
+            <img src="IMG/wer1.gif" alt="isaal1">
+            <div class="layer">
             </div>
+        </div>
+        <div class="news">
+            <img src="IMG/wer2.gif" alt="isaal2">
+            <div class="layer">
             </div>
-            <hr>
-            <p class="copyright">Copyright 2024 All Rights Reserved</p>
+        </div>
+        <div class="news">
+            <img src="IMG/wer4.gif" alt="isaal3">
+            <div class="layer">
+            </div>
+        </div>
+
+</section>
+
+<!--course-->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+    learning established by an academic community of committed and responsible 
+    individuals</p>
+    
+    <div class="row">
+        <div class="course-col">
+            <img src="IMG/STEM.jpg" alt="isaal1">
+            <h3>STEM</h3>
+            <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+            learning established by an academic community of committed and responsible 
+            individuals</p>
+            <a href="Courses.html" class="learn-btn">Learn More</a>
+        </div>
+        <div class="course-col">
+            <img src="IMG/STEM.jpg" alt="isaal1">
+            <h3>HUMSS</h3>
+            <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+            learning established by an academic community of committed and responsible 
+            individuals</p>
+            <a href="Courses.html" class="learn-btn">Learn More</a>
+        </div>
+        <div class="course-col">
+            <img src="IMG/STEM.jpg" alt="isaal1">
+            <h3>ICT</h3>
+            <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+            learning established by an academic community of committed and responsible 
+            individuals</p>
+            <a href="Courses.html" class="learn-btn">Learn More</a>
+        </div>    
+       </div>   
+       <div class="row2">
+        <div class="course-col">
+            <img src="IMG/STEM.jpg" alt="isaal1">
+            <h3>ABM</h3>
+            <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+            learning established by an academic community of committed and responsible 
+            individuals</p>
+            <a href="Courses.html" class="learn-btn">Learn More</a>
+        </div>
+        <div class="course-col">
+            <img src="IMG/STEM.jpg" alt="isaal1">
+            <h3>CULINARY</h3>
+            <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+            learning established by an academic community of committed and responsible 
+            individuals</p>
+            <a href="Courses.html" class="learn-btn">Learn More</a>
+        </div>
+       
+       </div>  
+</section>
+
+
+
+<!--Facilities-->
+<section class="sportsfest">
+    <h1>Sports Fest</h1>
+    <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+    learning established by an academic community of committed and responsible 
+    individuals</p>
+    
+    <div class="row">
+        <div class="sportsimage">
+            <img src="IMG/sports_1.jpg" alt="sports_1">
+            <h3> Red Phoenix vs. Blue Badgers</h3>
+            <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+            learning established by an academic community of committed and responsible 
+            individuals</p>
+        </div>
+        <div class="sportsimage">
+            <img src="IMG/sports_2.jpg" alt="sports_2">
+            <h3> Red Phoenix vs. Blue Badgers</h3>
+            <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+            learning established by an academic community of committed and responsible 
+            individuals</p>
+        </div>
+        <div class="sportsimage">
+            <img src="IMG/sports_3.jpg" alt="sports_3">
+            <h3> Red Phoenix vs. Blue Badgers</h3>
+            <p>Marian School of Quezon City is a Filipino, Christian Institution of 
+            learning established by an academic community of committed and responsible 
+            individuals</p>
         </div>
     </div>
-</div>
+</section>
 
-<script>
-    var MenuItems = document.getElementById("MenuItems");
+<!--admissions-->
+<section class="admissions">
+    <h1>We are Open for Admissions</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
 
-    MenuItems.style.maxHeight = "0px";
-
-    function menutoggle(){
-        if(MenuItems.style.maxHeight == "0px")
-        {
-            MenuItems.style.maxHeight = "200px";
-        }
-        else
-        {
-            MenuItems.style.maxHeight = "0px";
-        }
-    }
-</script>
+<footer> 
+    &copy; 2024 Marian School of Quezon City
+</footer>
 <script>
     var mode = document.getElementById("mode");
 
@@ -242,6 +185,5 @@
             }
         }
 </script>
-
 </body>
 </html>
